@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Bookmarx</title>
+    <link href="bower_components/skeleton/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/skeleton/css/skeleton.css" rel="stylesheet" type="text/css">
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <style>
+
+    .bm-wrapper, .bm-sidebar, .bm-container {
+        position: absolute;
+        top:0px;
+        bottom: 0px;
+    }
+
+    .bm-container {
+        left:0px;
+        min-width: 600px;
+    }
+
+    .bm-sidebar {
+        min-width: 100px;
+    }
+
+
+    .bm-wrapper {
+        top:100px;
+        min-width: 600px;
+    }
+
+    .bm-content {
+        margin-left: 100px;
+        height: 100%;
+    }
+
+    .bm-header {
+        height: 100px;
+    }
+
+
+    </style>
+</head>
+<body style="margin-left: 0px">
+
+    <section  class="bm-container dark-primary-color">
+        <div class="bm-header default-primary-color">
+            Header
+        </div>
+        <div class="bm-wrapper">
+            <div class="bm-sidebar dark-primary-color">
+                Sidebar
+            </div>
+            <div class="bm-content light-primary-color text-primary-color">
+                Content
+            </div>
+        </div>
+    </section>
+</body>
+</html>
