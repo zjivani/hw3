@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BookMarx</title>
+	<style>
+	html, body {
+		height:100%;
+		margin:0;
+	}
+
+	#main-container {
+		width:35%;
+		height:100%;
+		position:fixed;
+		top:0;
+		background-color:white;
+		left:0;
+	}
+
+	.verticalLine {
+    	border-right: thin solid black;
+	}
+
+	hr{
+		border: 2px thin black;
+
+	}
+	.hrStyled {
+		display: block;
+		margin: 10px;
+    	height: 1px;
+    	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	h4,h5,h6{
+		margin: 0;
+	}
+	section{
+		
+		padding-left: 20px;
+	}
+	.leftHalf{
+		float: left; 
+		width: 70%;
+		background-color:lightgrey;
+	}
+	.rightHalf{
+		float: right; 
+		width: 30%;
+		background-color: lightgreen;
+
+	}
+
+	/*Search Bar styling*/
+	form{
+		display: inline;
+		padding:20px;
+	}
+	.search { 
+		padding:6px 15px 6px 30px;
+		margin:3px; 
+		
+	}
+
+	.rounded { 
+	border-radius:15px; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	}
+
+
+	.light input[type=text]{
+		border:1px solid #acb1b7;
+		background-color:#fcfcfc;
+	}
+	</style>	
+</head>
+<body>
+
+<main id="main-container" class="verticalLine">
+	<h3>BookMarX</h3>
+	<hr>	
+	<div class="light">
+		<form>
+			<span><input type="text" class="search rounded" placeholder="Search..."></span>
+		</form>
+		<button>Add New +</button>
+		<button>New Folder</button>
+		<select>
+			<option value="Date">Volvo</option>
+			<option value="Folders">Saab</option>
+			<option value="MRU">Opel</option>
+			<option value="LRU">Audi</option>
+		</select>
+	</div>
+	<section>
+		<div>
+			<div class="leftHalf">
+				<h4>Reddit</h4>
+				<a href="#">www.Reddit.com</a>
+				
+			</div>
+			<div class="rightHalf">
+				<button>Edit</button>
+				<button>Delete</button>
+				<p style="margin:0;">divs = same</p>
+			</div>
+		</div>	
+		
+	</section>
+
+	<br>
+
+	<section>
+		<div>
+			<div class="leftHalf">
+				<h4>Reddit</h4>
+				<a href="#">www.Reddit.com</a>
+				
+			</div>
+			<div class="rightHalf">
+				<button>Edit</button>
+				<button>Delete</button>
+				<p style="margin:0;">divs = same</p>
+			</div>
+		</div>	
+		
+	</section>
+
+	<br>
+	<section>
+		<div>
+			<div class="leftHalf">
+				<h4>Reddit</h4>
+				<a href="#">www.Reddit.com</a>
+				
+			</div>
+			<div class="rightHalf">
+				<button>Edit</button>
+				<button>Delete</button>
+				<p style="margin:0;">divs = same</p>
+			</div>
+		</div>	
+		
+	</section>
+
+
+</main>
+
+</body>
+</html>
