@@ -15,6 +15,7 @@ gulp.task('html', function () {
 
 gulp.task('watch', function () {
   gulp.watch(['./app/*.html'], ['html']);
+   gulp.watch(['./app/*.css'], ['css']);
 });
 
 gulp.task('default', ['connect', 'watch']);
