@@ -47,10 +47,10 @@
     border-bottom-width: thin;
     border-bottom-color: #B6B6B6;
 }
-.bm-content li.editing, .bm-content ul li:hover  {
+.bm-content li.editing, .bm-content li:hover  {
     background-color: #4fc3f7;
 }
-.bm-content ul li.bm-folder:hover  {
+.bm-content li.bm-folder:hover  {
     background-color: #ECEFF1;
 }
 .bm-content a {
