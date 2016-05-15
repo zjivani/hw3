@@ -8,9 +8,11 @@ mysql.init(config.mysql);
 
 var app = express();
 
+app.locals.SERVER_ROOT = __dirname;
+
 require('./config/express')(app)
 
-app.locals.SERVER_ROOT = __dirname;
+
 
 /* Routes - consider putting in routes.js */
 app.use('/', require('./api_v1/bookmark'));
