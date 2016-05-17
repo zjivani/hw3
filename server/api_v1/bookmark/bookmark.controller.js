@@ -33,7 +33,7 @@ controller.confirmdelete = function(req, res){
 * Renders the add page with the add.ejs template
 */
 controller.add = function(req, res) {
-    res.render('books/add');
+    res.render('bookmarks/add');
 };
 
 /**
@@ -42,11 +42,10 @@ controller.add = function(req, res) {
 * renders the edit confirmation page with the edit.ejs template
 */
 controller.edit = function(req, res) {
-    var id = req.params.book_id;
-    db.query('SELECT * from books WHERE id =  ' + id, function(err, book) {
+    var id = req.params.bookmark_id;
+    db.query('SELECT * from bookmarks WHERE id =  ' + id, function(err, bm) {
         if (err) throw err;
-
-        res.render('books/edit', {book: book[0]});
+        res.render('bookmarks/edit', {bm: bm[0]});
     });
 };
 
